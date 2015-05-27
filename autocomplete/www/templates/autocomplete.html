@@ -1,0 +1,38 @@
+<ion-pane>
+      <ion-header-bar class="bar-royal">
+      <h1 class="title">Autocomplete</h1>
+    </ion-header-bar>
+
+    <ion-content>
+
+    <div class="list ">
+		  <label  class="item item-input">
+			<i class="icon ion-search placeholder-icon"></i>
+			<input type="text" id="Autocomplete" ng-autocomplete="result1" details="details1" options="options1" placeholder="Autocomplete location from map">
+		  </label>
+	</div>
+	<div class="list ">
+		  <label  class="item item-input">
+			<i class="icon ion-search placeholder-icon"></i>
+			<input type="text" id="Autocomplete" ng-autocomplete="result2" details="details2" options="options2" placeholder="Autocomplete location from map - Cities in Bangladesh">
+		  </label>
+	</div>
+	<div class="list ">
+		  <label  class="item item-input">
+			<i class="icon ion-search placeholder-icon"></i>
+			<input type="text" id="Autocomplete" ng-autocomplete="result3" details="details3" options="options3" placeholder="Autocomplete location from map - - Establishments in the Bangladesh">
+		  </label>
+	</div>
+	
+	<div class="list ">
+		  <label class="item item-input">
+			<i class="icon ion-search placeholder-icon"></i>
+			<input id="autocompleteArr" ng-keyup="complete()" type="text" placeholder="Autocomplete from array list">
+		  </label>
+	</div>
+
+    </ion-content>
+				
+    </ion-pane>
+	
+	
