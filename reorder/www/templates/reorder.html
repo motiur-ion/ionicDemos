@@ -1,0 +1,21 @@
+<ion-pane>
+      <ion-header-bar class="bar-royal">
+      <h1 class="title">Reorder Drag & Drop </h1>
+    </ion-header-bar>
+
+    <ion-content>
+
+     
+        <div class='row pad'>
+						  <ul class="list draglist">
+							 <li ng-repeat="obj in draggableObjects" ng-drop="true" class='item' ng-drop-success="onDropComplete($index, $data,$event)">
+									<div ng-drag="true" ng-drag-data="obj" ng-class="obj.name">
+										{{obj.name}}
+									</div>
+								</li>
+						</ul>
+        </div>
+      
+
+    </ion-content>
+    </ion-pane>
